@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+
+}
+.body{
+    background: url("../game-bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(150, 224, 150), rgb(233, 233, 144));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(30, 1fr);   /*per unit width=1fr*  18 times*/ 
+    grid-template-columns: repeat(30, 1fr);
+}
+.head{
+    background: linear-gradient(red, yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+    
+.food {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 0px;
+    font-size: 39px;
+    font-weight: bold;
+}
+#hiscoreBox {
+    position: absolute;
+    top: 39px;
+    right: 0px;
+    font-size: 39px;
+    font-weight: bold;
+}
